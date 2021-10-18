@@ -125,6 +125,8 @@ public class Controller {
 			break;
 
 		default:
+			view.showMessage("Invalid option, please try again");
+			run();
 			break;
 
 		}
