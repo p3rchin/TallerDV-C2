@@ -33,7 +33,6 @@ public class Controller {
 	 * the instances.<br>
 	 * <b>post</b>The instances of a class.<br>
 	 * 
-	 * @throws Exception is an event when a error occurred.
 	 */
 
 	public Controller() {
