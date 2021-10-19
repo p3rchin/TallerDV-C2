@@ -29,9 +29,10 @@ public class Controller {
 	private View view;
 
 	/**
-	 * This constructor define the instances.
-	 * <b>pre</b>Must exist declarations of the instances.<br>
+	 * This constructor define the instances. <b>pre</b>Must exist declarations of
+	 * the instances.<br>
 	 * <b>post</b>The instances of a class.<br>
+	 * 
 	 * @throws Exception is an event when a error occurred.
 	 */
 
@@ -43,9 +44,11 @@ public class Controller {
 	}
 
 	/**
-	 * This method verifies that the received String only has numbers.
-	 * <b>pre</b>The parameter String must be a number.<br>
-	 * <b>post</b> If the method complete correctly is because the String had a number. In other case the method return a false.<br>
+	 * This method verifies that the received String only has numbers. <b>pre</b>The
+	 * parameter String must be a number.<br>
+	 * <b>post</b> If the method complete correctly is because the String had a
+	 * number. In other case the method return a false.<br>
+	 * 
 	 * @param pNumber is the String number: pNumber need to be != null and != " ".
 	 * @return is the boolean value that is returned of the method.
 	 */
@@ -62,8 +65,8 @@ public class Controller {
 	}
 
 	/**
-	 * This method is the execution of the program.
-	 * <b>pre</b>The instances in the constructor must be exist.<br>
+	 * This method is the execution of the program. <b>pre</b>The instances in the
+	 * constructor must be exist.<br>
 	 * <b>post</b>The program should show results.<br>
 	 */
 
@@ -215,6 +218,10 @@ public class Controller {
 					}
 					System.out.println("|");
 				}
+				break;
+			default:
+				view.showMessage("Invalid option, please try again");
+				run();
 				break;
 
 			}
